@@ -8,9 +8,16 @@ Data and model address: [Miraaa030/ProtagonistDetect_Data_v1](https://huggingfac
 
 # Add fusion module
 
-If anyone wants to add the fusion module: change multimodal_fusion.py
-The output dict of ProtagonistDetector.forward() keeps the following keys unchanged:
-rgb [B,T,1024];  embeds [B,10,128];  audio [B,T,128];  final_score [B,10];  mask[B,T];  seg_mask [B,10];  length[B]
+If anyone wants to add the fusion module: modify `multimodal_fusion.py`.
+
+The output dictionary of `ProtagonistDetector.forward()` keeps the following keys unchanged:
+- `rgb`: shape `[B, T, 1024]`
+- `embeds`: shape `[B, 10, 128]`
+- `audio`: shape `[B, T, 128]`
+- `final_score`: shape `[B, 10]`
+- `mask`: shape `[B, T]`
+- `seg_mask`: shape `[B, 10]`
+- `length`: shape `[B]`
 
 ---
   
