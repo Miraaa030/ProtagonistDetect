@@ -97,7 +97,7 @@ python ablation.py --tfrecord data/test_1014.tfrecord --checkpoint  outputs/best
 
 ---
 
-## 主要参考文献
+## Main references
 
 - Xiao et al. (2017). *End-to-end Deep Learning for Person Search*
 - Fu & Huang (2008). *Human Age Estimation with Regression on Discriminative Aging Manifold*
